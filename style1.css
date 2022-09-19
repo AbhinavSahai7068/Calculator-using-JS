@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* i used this so that i can fixed particular values with these keywords and can use it further with ease */
+/* :root {
+    --border-radius: 5px;
+    --border-width: 1px;
+    --light-grey: #e2e0e0;
+    --blue: #7f6cfc;
+    --orange: #ffc877;
+    --red: #c14444;
+    
+} */
+/* body{
+    background-color: #7f6cfc;
+} */
+
+
+/* to set the container's width height for entire calculator */
+#calculator{
+    width:45%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 130px;
+    border: 2px solid black;
+    /* border-radius: 10px; */
+
+
+}
+
+
+/* to centralize the calculator heading and make it look awesome */
+#calculator h1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    border: 3px solid rgb(9, 9, 9) !important;
+    color:white;
+    padding:10px;
+    margin:010px;
+
+
+
+}
+
+/* to make the display of calculator  */
+#display-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    background-color: whitesmoke;
+    /* margin: none; */
+    margin:10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    min-height: 45px;
+
+
+
+}
+/* to style text that will be displayed on calculator screen  */
+
+#display-container p{
+    color:blue;
+    font-weight: 700;
+    font-size: large;
+    margin:10px;
+}
+
+ /* to style button container and looks of buttons  */
+#buttons-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 60%;
+    min-height: 300px;
+    border: 2px solid lightgray;
+    /* justify-content: space-around; */
+}
+
+.button {
+    width: 25%; /*25% of total width of flex box*/
+    height: 20%;  /*20% of total height of flex box*/
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 1.8rem;
+    border: 1px solid darkgray;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.button:hover{
+    color:rgb(255, 255, 255);
+    background-color: darkblue;
+
+}
+.red{
+    background-color: rgb(255, 38, 0);
+    color:wheat;
+    font-weight: bold;
+}
+.red:hover{
+    background-color: black;
+}
+#button-zero{
+    width:50%; /* to make width of 0 button to take half width of calculator width*/
+}
+
+
+
+
+
